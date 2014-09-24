@@ -1,0 +1,3 @@
+# In it's current state you probalby don't want sites to index this...
+User-agent: *
+Disallow: /

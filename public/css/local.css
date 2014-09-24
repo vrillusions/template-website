@@ -1,0 +1,15 @@
+/* where to make your changes */
+body {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+}
+
+pre {
+  text-align: left;
+  max-width: 90%;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  padding: 10px;
+}

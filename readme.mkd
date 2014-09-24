@@ -3,3 +3,35 @@
     <html><body>It works</body></html>
 
 Is that what your `index.html` looks like?  Well that looks ugly.  This template will make it look slightly less ugly.
+
+## Design goals
+
+- all the default files needed (`favicon.ico`, `robots.txt`)
+- basic CSS ([picnic](https://github.com/picnicss/picnic))
+- no external resources
+
+## Usage
+
+Copy `public` to wherever you want.
+
+## Test web server
+
+Want to just start a basic web server?
+
+### Python 3
+
+    cd public
+    python3 -m http.server 8000 &>>../simpleserver.log &
+
+### Python 2
+
+    cd public
+    python -m SimpleHTTPServer 8000 &>>../simpleserver.log &
+
+Now you have a web server listening on port 8000 that will happily send any file inside the `public` folder. Use this to setup quick ad hoc file servers. Just create a `files` folder off of `public` and toss all your stuff in there. So long as there isn't an `index.html` it will list the contents of the folder.
+
+It should be obvious but it wouldn't be the best of ideas to place this server on the internet.
+
+## Credits
+
+- CSS is done with [picnic](https://github.com/picnicss/picnic)
