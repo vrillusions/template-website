@@ -1,0 +1,5 @@
+# Template: website
+
+    <html><body>It works</body></html>
+
+Is that what your `index.html` looks like?  Well that looks ugly.  This template will make it look slightly less ugly.
