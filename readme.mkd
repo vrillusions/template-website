@@ -12,7 +12,13 @@ Is that what your `index.html` looks like?  Well that looks ugly.  This template
 
 ## Usage
 
-Copy `public` to wherever you want.
+Can either clone this project and place the `public` folder somewhere or to download just the archive:
+
+```
+wget https://github.com/vrillusions/template-website/archive/master.tar.gz
+tar xzf master.tar.gz
+mv template-website-master/public /srv/www/example.com/
+```
 
 ## Test web server
 
@@ -30,7 +36,7 @@ Want to just start a basic web server?
 
 Now you have a web server listening on port 8000 that will happily send any file inside the `public` folder. Use this to setup quick ad hoc file servers. Just create a `files` folder off of `public` and toss all your stuff in there. So long as there isn't an `index.html` it will list the contents of the folder.
 
-It should be obvious but it wouldn't be the best of ideas to place this server on the internet.
+It should be obvious but it wouldn't be the best of ideas to run this simple http server on the internet.
 
 ## Credits
 
